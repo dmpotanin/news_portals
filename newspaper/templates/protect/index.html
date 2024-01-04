@@ -1,0 +1,11 @@
+{% extends "main.html" %}
+
+{% block content %}
+<h2>　登録された方のページ {{request.user.username}}</h2>
+<div> ここでは一人一人登録された方の個人情報を含まれている可能性があります。 </div>
+
+<button> <a href="sign/logout/">出る</a> </button>
+{% if is_not_authors %}
+<button> <a href="sign/upgrade/"> Premiumに成りたい!</a> </button>
+{% endif %}
+{% endblock %}

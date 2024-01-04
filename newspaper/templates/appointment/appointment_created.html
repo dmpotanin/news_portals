@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>こんにちは{{ appointment.client_name }} !</h2>
+    <p> あなたの気に入ったカテゴリに新い記事が出ました。 {{ appointment.date|date:"d-M-Y" }} : {{ appointment.message|truncatechars:50 }} </p>
+</body>
+</html>
